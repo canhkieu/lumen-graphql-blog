@@ -43,7 +43,7 @@ return [
         'view'       => 'graphql::graphiql',
         'display'    => env('ENABLE_GRAPHIQL', true),
     ],
-    'defaultFieldResolver' => function ($root, $args, $context, $info) { },
+    // 'defaultFieldResolver' => null,
     'headers' => [],
     'json_encoding_options' => 0,
 ];

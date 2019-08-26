@@ -36,7 +36,7 @@ class PostsQuery extends Query
     public function resolve($root, $args, $context, ResolveInfo $resolveInfo, Closure $getSelectFields)
     {
 
-        $posts = \App\Post::paginate(5);
+        $posts = \App\Post::paginate(5, ['*'], 'page', 1);
         return $posts;
         // /** @var SelectFields $fields */
         // $fields = $getSelectFields();

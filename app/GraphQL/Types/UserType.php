@@ -18,15 +18,15 @@ class UserType extends GraphQLType
     public function fields(): array
     {
         return [
-            // 'id' => [
-            //     'type' => Type::int(),
-            //     'description' => 'ID',
-            //     // Use 'alias', if the database column is different from the type name.
-            //     // This is supported for discrete values as well as relations.
-            //     // - you can also use `DB::raw()` to solve more complex issues
-            //     // - or a callback returning the value (string or `DB::raw()` result)
-            //     // 'alias' => 'user_id',
-            // ],
+            'id' => [
+                'type' => Type::int(),
+                'description' => 'ID',
+                // Use 'alias', if the database column is different from the type name.
+                // This is supported for discrete values as well as relations.
+                // - you can also use `DB::raw()` to solve more complex issues
+                // - or a callback returning the value (string or `DB::raw()` result)
+                // 'alias' => 'user_id',
+            ],
             'name' => [
                 'type' => Type::string(),
                 'description' => 'Tên',
